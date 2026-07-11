@@ -1,5 +1,11 @@
 class Vehicle:
-    print()
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+    def __str__(self):
+        return f"Vehicle Name: {self.name}, Speed: {self.max_speed}, Mileage: {self.mileage}"
 
-car = Vehicle()
-print(car)
+
+vehicle1 = Vehicle("Tesla Model S", 250, 18)
+print(vehicle1.__str__())
